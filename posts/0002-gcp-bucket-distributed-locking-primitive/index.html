@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Mykola on blog </title>
+    <title>Mykola on blog  | GCP Bucket as a Distributed Locking Primitive</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -27,32 +27,39 @@
     
 
     
-      <link href="https://mgurov.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Mykola on blog" />
-      <link href="https://mgurov.github.io/index.xml" rel="feed" type="application/rss+xml" title="Mykola on blog" />
-    
 
-    <meta property="og:title" content="Mykola on blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://mgurov.github.io/" />
+    <meta property="og:title" content="GCP Bucket as a Distributed Locking Primitive" />
+<meta property="og:description" content="I was looking for a simple way to prevent business users executing same slow and expensive action simultaneously. Something like a lock file, but more distributed. And I wasn&rsquo;t very much in the mood of setting up Hazelcast or Zookeper, or a database for this kind of a trivial task." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mgurov.github.io/posts/0002-gcp-bucket-distributed-locking-primitive/" />
+<meta property="article:published_time" content="2019-07-07T11:31:10&#43;02:00"/>
+<meta property="article:modified_time" content="2019-07-07T11:31:10&#43;02:00"/>
 
-<meta property="og:updated_time" content="2019-07-07T11:31:10&#43;02:00"/>
+<meta itemprop="name" content="GCP Bucket as a Distributed Locking Primitive">
+<meta itemprop="description" content="I was looking for a simple way to prevent business users executing same slow and expensive action simultaneously. Something like a lock file, but more distributed. And I wasn&rsquo;t very much in the mood of setting up Hazelcast or Zookeper, or a database for this kind of a trivial task.">
 
-<meta itemprop="name" content="Mykola on blog">
-<meta itemprop="description" content="">
 
+<meta itemprop="datePublished" content="2019-07-07T11:31:10&#43;02:00" />
+<meta itemprop="dateModified" content="2019-07-07T11:31:10&#43;02:00" />
+<meta itemprop="wordCount" content="202">
+
+
+
+<meta itemprop="keywords" content="gcp,distributed locking," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Mykola on blog"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="GCP Bucket as a Distributed Locking Primitive"/>
+<meta name="twitter:description" content="I was looking for a simple way to prevent business users executing same slow and expensive action simultaneously. Something like a lock file, but more distributed. And I wasn&rsquo;t very much in the mood of setting up Hazelcast or Zookeper, or a database for this kind of a trivial task."/>
 
   </head>
 
   <body class="ma0 avenir bg-near-white">
 
     
+   
+  
 
   <header>
-    <div class="pb3-m pb6-l bg-black">
+    <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="https://mgurov.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -102,98 +109,66 @@
   </div>
 </nav>
 
-      <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          Mykola on blog
-        </h1>
-        
-      </div>
     </div>
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">GCP Bucket as a Distributed Locking Primitive</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-07-07T11:31:10&#43;02:00">July 7, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>I was looking for a simple way to prevent business users executing same slow and expensive action simultaneously. Something like a lock file, but more distributed. And I wasn&rsquo;t very much in the mood of setting up Hazelcast or Zookeper, or a database for this kind of a trivial task.</p>
+
+<p>The app I worked with happened to use google storage buckets, which apparently offers good consistency guarantees: <a href="https://cloud.google.com/storage/docs/consistency">https://cloud.google.com/storage/docs/consistency</a></p>
+
+<p>This means: if you have an access to a bucket, you can get an exclusive distributed lock a very simple way (example in kotlin):</p>
+
+<pre><code>val lock = bucket.create(lockPath, &quot;&quot;.toByteArray(), 
+    Bucket.BlobTargetOption.doesNotExist())
+</code></pre>
+
+<p>No need to be a member of a cluster, sit on the same environment or at all be in the environment. You can do a lock, or remove it, from your workstation with the <code>gsutil</code> if you have to.</p>
+
+<p>There&rsquo;s of course a caveat. GCS won&rsquo;t handle TTL&rsquo;s for you. Not in a convenient for this case manner. Should one of your workers fail to clean the lock up after finishing their job, you have to either remove the lock manually, or add creation/mutation timestamp check to the code yourself.
+Still, as a simple or temporary solution GCS is a very handy option, IMHO.</p><ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/gcp" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">gcp</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/distributed-locking" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">distributed locking</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
   </article>
-  
-  
-  
-  
-  
-  
-  
-    
-    
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      
-       
-          <h1 class="flex-none">
-            Recent Posts
-          </h1>
-        
-
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/0002-gcp-bucket-distributed-locking-primitive/" class="color-inherit dim link">
-            GCP Bucket as a Distributed Locking Primitive
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <p>I was looking for a simple way to prevent business users executing same slow and expensive action simultaneously. Something like a lock file, but more distributed. And I wasn&rsquo;t very much in the mood of setting up Hazelcast or Zookeper, or a database for this kind of a trivial task.</p>
-        </div>
-          <a href="/posts/0002-gcp-bucket-distributed-locking-primitive/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/0001-integration_tests_v_spring/" class="color-inherit dim link">
-            Java Integration Tests v Spring Context – when less is more
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <p>When doing integration testing within a Spring (Boot) based project, we tend to use some sort of Spring context. Setting it up isn&rsquo;t free. Careless tests composition can lead to much time wasted on re-creating those contexts, and will make running tests painfully long very quickly. There are simple techniques of keeping this overhead to the minimum. Ideally – start only one test context for the whole run.</p>
-        </div>
-          <a href="/posts/0001-integration_tests_v_spring/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-      </section>
-
-      
-
-      </div>
-  
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">

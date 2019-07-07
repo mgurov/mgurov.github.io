@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://mgurov.github.io/posts/0002-gcp-bucket-distributed-locking-primitive/</loc>
+    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/</loc>
+    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/posts/</loc>
+    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/</loc>
+    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/distributed-locking/</loc>
+    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/gcp/</loc>
+    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/about/</loc>
+    <lastmod>2019-07-06T23:18:57+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/posts/0001-integration_tests_v_spring/</loc>
+    <lastmod>2019-07-06T23:13:31+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/spring/</loc>
+    <lastmod>2019-07-06T23:13:31+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/testing/</loc>
+    <lastmod>2019-07-06T23:13:31+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
