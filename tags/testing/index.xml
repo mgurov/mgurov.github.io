@@ -6,18 +6,20 @@
     <description>Recent content in testing on Mykola on blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jul 2019 23:13:31 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2019 12:31:38 +0200</lastBuildDate>
     
 	<atom:link href="https://mgurov.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Java Integration Tests v Spring Context – when less is more</title>
-      <link>https://mgurov.github.io/posts/0001-integration_tests_v_spring/</link>
-      <pubDate>Sat, 06 Jul 2019 23:13:31 +0200</pubDate>
+      <title>Testing on Production – deep backend edition</title>
+      <link>https://mgurov.github.io/talks/testing-on-production/</link>
+      <pubDate>Sun, 07 Jul 2019 12:31:38 +0200</pubDate>
       
-      <guid>https://mgurov.github.io/posts/0001-integration_tests_v_spring/</guid>
-      <description>&lt;p&gt;When doing integration testing within a Spring (Boot) based project, we tend to use some sort of Spring context. Setting it up isn&amp;rsquo;t free. Careless tests composition can lead to much time wasted on re-creating those contexts, and will make running tests painfully long very quickly. There are simple techniques of keeping this overhead to the minimum. Ideally – start only one test context for the whole run.&lt;/p&gt;</description>
+      <guid>https://mgurov.github.io/talks/testing-on-production/</guid>
+      <description>Embrace Production as a first-class testing environment to decrease costs and improve quality.
+Thorough testing before merging to master is great, but it doesn’t reveal the unknowns. Staging on shared environments tends to be slow, unreliable and costly to support. Why not just learn from the only true environment by conducting safe and efficient experiments?
+This talk is based on my experience of increasing the delivery rate within the context of back-end systems of bol.</description>
     </item>
     
   </channel>

@@ -3,24 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mgurov.github.io/posts/0002-gcp-bucket-distributed-locking-primitive/</loc>
-    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
+    <loc>https://mgurov.github.io/talks/trunk-based-delivery/</loc>
+    <lastmod>2019-07-07T12:41:38+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mgurov.github.io/</loc>
-    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
+    <loc>https://mgurov.github.io/tags/cd/</loc>
+    <lastmod>2019-07-07T12:41:38+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mgurov.github.io/posts/</loc>
-    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
+    <loc>https://mgurov.github.io/</loc>
+    <lastmod>2019-07-07T12:41:38+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mgurov.github.io/tags/</loc>
+    <lastmod>2019-07-07T12:41:38+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/talks/</loc>
+    <lastmod>2019-07-07T12:41:38+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/talks/</loc>
+    <lastmod>2019-07-07T12:41:38+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/talks/testing-on-production/</loc>
+    <lastmod>2019-07-07T12:31:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/testing/</loc>
+    <lastmod>2019-07-07T12:31:38+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/posts/0002-gcp-bucket-distributed-locking-primitive/</loc>
+    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/posts/</loc>
     <lastmod>2019-07-07T11:31:10+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -48,13 +82,13 @@
   </url>
   
   <url>
-    <loc>https://mgurov.github.io/tags/spring/</loc>
+    <loc>https://mgurov.github.io/tags/tdd/</loc>
     <lastmod>2019-07-06T23:13:31+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mgurov.github.io/tags/testing/</loc>
+    <loc>https://mgurov.github.io/tags/spring/</loc>
     <lastmod>2019-07-06T23:13:31+02:00</lastmod>
     <priority>0</priority>
   </url>

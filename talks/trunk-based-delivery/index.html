@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Mykola on blog  | GCP Bucket as a Distributed Locking Primitive</title>
+    <title>Mykola on blog  | Back to Trunk - the path of the Continuous Delivery</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -28,27 +28,30 @@
 
     
 
-    <meta property="og:title" content="GCP Bucket as a Distributed Locking Primitive" />
-<meta property="og:description" content="I was looking for a simple way to prevent business users executing same slow and expensive action simultaneously. Something like a lock file, but more distributed. And I wasn&rsquo;t very much in the mood of setting up Hazelcast or Zookeper, or a database for this kind of a trivial task." />
+    <meta property="og:title" content="Back to Trunk - the path of the Continuous Delivery" />
+<meta property="og:description" content="Deploy continuously, move faster. Why? Won’t things break? What are the benefits for the teams and their stakeholders? Do those also apply to the “deep” back-end systems?
+At bol.com (one of the biggest online retailers of the Netherlands), feature teams enjoy lots of autonomy. We can press the &ldquo;deploy&rdquo; button at any moment. Theoretically. Practically, there are non-technical obstacles, like: &ldquo;testing isn&rsquo;t complete, the rest of the changes must wait." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mgurov.github.io/posts/0002-gcp-bucket-distributed-locking-primitive/" />
-<meta property="article:published_time" content="2019-07-07T11:31:10&#43;02:00"/>
-<meta property="article:modified_time" content="2019-07-07T11:31:10&#43;02:00"/>
+<meta property="og:url" content="https://mgurov.github.io/talks/trunk-based-delivery/" />
+<meta property="article:published_time" content="2019-07-07T12:41:38&#43;02:00"/>
+<meta property="article:modified_time" content="2019-07-07T12:41:38&#43;02:00"/>
 
-<meta itemprop="name" content="GCP Bucket as a Distributed Locking Primitive">
-<meta itemprop="description" content="I was looking for a simple way to prevent business users executing same slow and expensive action simultaneously. Something like a lock file, but more distributed. And I wasn&rsquo;t very much in the mood of setting up Hazelcast or Zookeper, or a database for this kind of a trivial task.">
-
-
-<meta itemprop="datePublished" content="2019-07-07T11:31:10&#43;02:00" />
-<meta itemprop="dateModified" content="2019-07-07T11:31:10&#43;02:00" />
-<meta itemprop="wordCount" content="202">
+<meta itemprop="name" content="Back to Trunk - the path of the Continuous Delivery">
+<meta itemprop="description" content="Deploy continuously, move faster. Why? Won’t things break? What are the benefits for the teams and their stakeholders? Do those also apply to the “deep” back-end systems?
+At bol.com (one of the biggest online retailers of the Netherlands), feature teams enjoy lots of autonomy. We can press the &ldquo;deploy&rdquo; button at any moment. Theoretically. Practically, there are non-technical obstacles, like: &ldquo;testing isn&rsquo;t complete, the rest of the changes must wait.">
 
 
+<meta itemprop="datePublished" content="2019-07-07T12:41:38&#43;02:00" />
+<meta itemprop="dateModified" content="2019-07-07T12:41:38&#43;02:00" />
+<meta itemprop="wordCount" content="184">
 
-<meta itemprop="keywords" content="gcp,distributed locking," />
+
+
+<meta itemprop="keywords" content="CD,talks," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GCP Bucket as a Distributed Locking Primitive"/>
-<meta name="twitter:description" content="I was looking for a simple way to prevent business users executing same slow and expensive action simultaneously. Something like a lock file, but more distributed. And I wasn&rsquo;t very much in the mood of setting up Hazelcast or Zookeper, or a database for this kind of a trivial task."/>
+<meta name="twitter:title" content="Back to Trunk - the path of the Continuous Delivery"/>
+<meta name="twitter:description" content="Deploy continuously, move faster. Why? Won’t things break? What are the benefits for the teams and their stakeholders? Do those also apply to the “deep” back-end systems?
+At bol.com (one of the biggest online retailers of the Netherlands), feature teams enjoy lots of autonomy. We can press the &ldquo;deploy&rdquo; button at any moment. Theoretically. Practically, there are non-technical obstacles, like: &ldquo;testing isn&rsquo;t complete, the rest of the changes must wait."/>
 
   </head>
 
@@ -128,36 +131,52 @@
     <header class="mt4 w-100">
       <p class="f6 b helvetica tracked">
           
-        POSTS
+        TALKS
       </p>
-      <h1 class="f1 athelas mb1">GCP Bucket as a Distributed Locking Primitive</h1>
+      <h1 class="f1 athelas mb1">Back to Trunk - the path of the Continuous Delivery</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2019-07-07T11:31:10&#43;02:00">July 7, 2019</time>
+      <time class="f6 mv4 dib tracked" datetime="2019-07-07T12:41:38&#43;02:00">July 7, 2019</time>
       
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>I was looking for a simple way to prevent business users executing same slow and expensive action simultaneously. Something like a lock file, but more distributed. And I wasn&rsquo;t very much in the mood of setting up Hazelcast or Zookeper, or a database for this kind of a trivial task.</p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
 
-<p>The app I worked with happened to use google storage buckets, which apparently offers good consistency guarantees: <a href="https://cloud.google.com/storage/docs/consistency">https://cloud.google.com/storage/docs/consistency</a></p>
+<p>Deploy continuously, move faster. Why? Won’t things break? What are the benefits for the teams and their stakeholders? Do those also apply to the “deep” back-end systems?</p>
 
-<p>This means: if you have an access to a bucket, you can get an exclusive distributed lock a very simple way (example in kotlin):</p>
+<p>At <a href="https://bol.com">bol.com</a> (one of the biggest online retailers of the Netherlands), feature teams enjoy lots of autonomy. We can press the &ldquo;deploy&rdquo; button at any moment. Theoretically. Practically, there are non-technical obstacles, like: &ldquo;testing isn&rsquo;t complete, the rest of the changes must wait.&rdquo; Every delay adds up to the focus loss, and the pile of the undelivered risks is growing fast with every commit.</p>
 
-<pre><code>val lock = bucket.create(lockPath, &quot;&quot;.toByteArray(), 
-    Bucket.BlobTargetOption.doesNotExist())
-</code></pre>
+<p>At our team, we hadn&rsquo;t considered our delivery process slow or problematic. We were nevertheless surprised by how much our way of working changed when we started to keep our master synced with production at all times.</p>
 
-<p>No need to be a member of a cluster, sit on the same environment or at all be in the environment. You can do a lock, or remove it, from your workstation with the <code>gsutil</code> if you have to.</p>
+<p>Let&rsquo;s take a look at the experience of this transition:</p>
 
-<p>There&rsquo;s of course a caveat. GCS won&rsquo;t handle TTL&rsquo;s for you. Not in a convenient for this case manner. Should one of your workers fail to clean the lock up after finishing their job, you have to either remove the lock manually, or add creation/mutation timestamp check to the code yourself.
-Still, as a simple or temporary solution GCS is a very handy option, IMHO.</p><ul class="pa0">
+<ul>
+<li>what were the obstacles in the team behavior, testing and monitoring?</li>
+<li>which were the benefits discovered?</li>
+<li>how did the change affect the idea-to-value velocity perception by the business stakeholders?</li>
+</ul>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/Vi1cjw-X3Qc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<h4 id="past">Past</h4>
+
+<p>June 2019 <a href="https://spacessummit.bol.com/talks.html#quickie-mykola">Bol.com spaces summit</a> – <a href="https://www.youtube.com/watch?v=Vi1cjw-X3Qc&amp;list=PLXL-0W_fYXynhNcz9hpL0Ziux3n4ftzvw&amp;index=5&amp;t=1s">video</a></p>
+
+<p><a href="https://www.meetup.com/Continuous-Delivery-Amsterdam/events/251583518/">November 2018 meetup</a> of <a href="https://www.meetup.com/Continuous-Delivery-Amsterdam">Continuous Delivery Amsterdam</a> – <a href="https://www.youtube.com/watch?v=SLv2DHBZNmQ&amp;list=PLXL-0W_fYXynhNcz9hpL0Ziux3n4ftzvw&amp;index=3">video</a></p>
+
+<hr />
+<ul class="pa0">
   
    <li class="list">
-     <a href="/tags/gcp" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">gcp</a>
+     <a href="/tags/cd" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">CD</a>
    </li>
   
    <li class="list">
-     <a href="/tags/distributed-locking" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">distributed locking</a>
+     <a href="/tags/talks" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">talks</a>
    </li>
   
 </ul>
@@ -171,6 +190,17 @@ Still, as a simple or temporary solution GCS is a very handy option, IMHO.</p><u
 
 
 
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/talks/testing-on-production/">Testing on Production – deep backend edition</a>
+        </li>
+	    
+    </ul>
+</div>
 
 </aside>
 

@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Mykola on blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jul 2019 11:31:10 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2019 12:41:38 +0200</lastBuildDate>
     
 	<atom:link href="https://mgurov.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CD</title>
+      <link>https://mgurov.github.io/tags/cd/</link>
+      <pubDate>Sun, 07 Jul 2019 12:41:38 +0200</pubDate>
+      
+      <guid>https://mgurov.github.io/tags/cd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>talks</title>
+      <link>https://mgurov.github.io/tags/talks/</link>
+      <pubDate>Sun, 07 Jul 2019 12:41:38 +0200</pubDate>
+      
+      <guid>https://mgurov.github.io/tags/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>https://mgurov.github.io/tags/testing/</link>
+      <pubDate>Sun, 07 Jul 2019 12:31:38 +0200</pubDate>
+      
+      <guid>https://mgurov.github.io/tags/testing/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>distributed locking</title>
@@ -30,20 +57,20 @@
     </item>
     
     <item>
+      <title>TDD</title>
+      <link>https://mgurov.github.io/tags/tdd/</link>
+      <pubDate>Sat, 06 Jul 2019 23:13:31 +0200</pubDate>
+      
+      <guid>https://mgurov.github.io/tags/tdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>spring</title>
       <link>https://mgurov.github.io/tags/spring/</link>
       <pubDate>Sat, 06 Jul 2019 23:13:31 +0200</pubDate>
       
       <guid>https://mgurov.github.io/tags/spring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>testing</title>
-      <link>https://mgurov.github.io/tags/testing/</link>
-      <pubDate>Sat, 06 Jul 2019 23:13:31 +0200</pubDate>
-      
-      <guid>https://mgurov.github.io/tags/testing/</guid>
       <description></description>
     </item>
     

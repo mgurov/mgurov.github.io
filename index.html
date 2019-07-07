@@ -36,7 +36,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mgurov.github.io/" />
 
-<meta property="og:updated_time" content="2019-07-07T11:31:10&#43;02:00"/>
+<meta property="og:updated_time" content="2019-07-07T12:41:38&#43;02:00"/>
 
 <meta itemprop="name" content="Mykola on blog">
 <meta itemprop="description" content="">
@@ -73,6 +73,12 @@
           <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline white-90" href="/about/" title="about me page">
               about me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/talks/" title="talks page">
+              talks
             </a>
           </li>
           
@@ -131,7 +137,7 @@
       
        
           <h1 class="flex-none">
-            Recent Posts
+            Recent Talks
           </h1>
         
 
@@ -148,14 +154,15 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/0002-gcp-bucket-distributed-locking-primitive/" class="color-inherit dim link">
-            GCP Bucket as a Distributed Locking Primitive
+          <a href="/talks/trunk-based-delivery/" class="color-inherit dim link">
+            Back to Trunk - the path of the Continuous Delivery
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <p>I was looking for a simple way to prevent business users executing same slow and expensive action simultaneously. Something like a lock file, but more distributed. And I wasn&rsquo;t very much in the mood of setting up Hazelcast or Zookeper, or a database for this kind of a trivial task.</p>
+          Deploy continuously, move faster. Why? Won’t things break? What are the benefits for the teams and their stakeholders? Do those also apply to the “deep” back-end systems?
+At bol.com (one of the biggest online retailers of the Netherlands), feature teams enjoy lots of autonomy. We can press the &ldquo;deploy&rdquo; button at any moment. Theoretically. Practically, there are non-technical obstacles, like: &ldquo;testing isn&rsquo;t complete, the rest of the changes must wait.
         </div>
-          <a href="/posts/0002-gcp-bucket-distributed-locking-primitive/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="/talks/trunk-based-delivery/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -172,14 +179,16 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/0001-integration_tests_v_spring/" class="color-inherit dim link">
-            Java Integration Tests v Spring Context – when less is more
+          <a href="/talks/testing-on-production/" class="color-inherit dim link">
+            Testing on Production – deep backend edition
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <p>When doing integration testing within a Spring (Boot) based project, we tend to use some sort of Spring context. Setting it up isn&rsquo;t free. Careless tests composition can lead to much time wasted on re-creating those contexts, and will make running tests painfully long very quickly. There are simple techniques of keeping this overhead to the minimum. Ideally – start only one test context for the whole run.</p>
+          Embrace Production as a first-class testing environment to decrease costs and improve quality.
+Thorough testing before merging to master is great, but it doesn’t reveal the unknowns. Staging on shared environments tends to be slow, unreliable and costly to support. Why not just learn from the only true environment by conducting safe and efficient experiments?
+This talk is based on my experience of increasing the delivery rate within the context of back-end systems of bol.
         </div>
-          <a href="/posts/0001-integration_tests_v_spring/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="/talks/testing-on-production/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
