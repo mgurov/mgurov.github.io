@@ -13,36 +13,47 @@
   </url>
   
   <url>
-    <loc>https://mgurov.github.io/tags/kotlin/</loc>
-    <lastmod>2019-07-07T12:51:38+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://mgurov.github.io/talks/</loc>
-    <lastmod>2019-07-07T12:51:38+02:00</lastmod>
+    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mgurov.github.io/</loc>
-    <lastmod>2019-07-07T12:51:38+02:00</lastmod>
+    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mgurov.github.io/tags/tdd/</loc>
-    <lastmod>2019-07-07T12:51:38+02:00</lastmod>
+    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mgurov.github.io/tags/</loc>
-    <lastmod>2019-07-07T12:51:38+02:00</lastmod>
+    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mgurov.github.io/tags/wip/</loc>
+    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/talks/mockless-testing/</loc>
+    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/talks/</loc>
+    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/kotlin/</loc>
     <lastmod>2019-07-07T12:51:38+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -50,12 +61,6 @@
   <url>
     <loc>https://mgurov.github.io/talks/kotlin-for-testability/</loc>
     <lastmod>2019-07-07T12:51:38+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mgurov.github.io/tags/talks/</loc>
-    <lastmod>2019-07-07T12:51:38+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
