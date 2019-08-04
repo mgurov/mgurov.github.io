@@ -13,24 +13,47 @@
   </url>
   
   <url>
-    <loc>https://mgurov.github.io/talks/</loc>
-    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mgurov.github.io/</loc>
-    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
+    <lastmod>2019-07-31T16:57:33+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mgurov.github.io/tags/tdd/</loc>
-    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
+    <loc>https://mgurov.github.io/posts/0003-jsonb_agg_children/</loc>
+    <lastmod>2019-07-31T16:57:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/posts/</loc>
+    <lastmod>2019-07-31T16:57:33+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mgurov.github.io/tags/</loc>
+    <lastmod>2019-07-31T16:57:33+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/jsonb/</loc>
+    <lastmod>2019-07-31T16:57:33+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/postgres/</loc>
+    <lastmod>2019-07-31T16:57:33+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/talks/</loc>
+    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/tags/tdd/</loc>
     <lastmod>2019-07-30T21:04:07+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -78,12 +101,6 @@
   <url>
     <loc>https://mgurov.github.io/posts/0002-gcp-bucket-distributed-locking-primitive/</loc>
     <lastmod>2019-07-07T11:31:10+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mgurov.github.io/posts/</loc>
-    <lastmod>2019-07-07T11:31:10+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
