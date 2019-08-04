@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>WIP – Sprinkle sprinkle Kotlin sugar - small big shifts in test preparation</title>
-      <link>https://mgurov.github.io/talks/kotlin-for-testability/</link>
-      <pubDate>Sun, 07 Jul 2019 12:51:38 +0200</pubDate>
-      
-      <guid>https://mgurov.github.io/talks/kotlin-for-testability/</guid>
-      <description>How to bring joy back to TDD with Kotlin again</description>
-    </item>
-    
-    <item>
       <title>Back to Trunk - the path of the Continuous Delivery</title>
       <link>https://mgurov.github.io/talks/trunk-based-delivery/</link>
       <pubDate>Sun, 07 Jul 2019 12:41:38 +0200</pubDate>
@@ -39,6 +30,15 @@ At bol.com (one of the biggest online retailers of the Netherlands), feature tea
       <description>Embrace Production as a first-class testing environment to decrease costs and improve quality.
 Thorough testing before merging to master is great, but it doesn’t reveal the unknowns. Staging on shared environments tends to be slow, unreliable and costly to support. Why not just learn from the only true environment by conducting safe and efficient experiments?
 This talk is based on my experience of increasing the delivery rate within the context of back-end systems of bol.</description>
+    </item>
+    
+    <item>
+      <title>WIP – Sprinkle sprinkle Kotlin sugar - small big shifts in test preparation</title>
+      <link>https://mgurov.github.io/talks/kotlin-for-testability/</link>
+      <pubDate>Sun, 07 Jul 2019 12:51:38 +0200</pubDate>
+      
+      <guid>https://mgurov.github.io/talks/kotlin-for-testability/</guid>
+      <description>On Kotling helping to bringing the joy back to TDD</description>
     </item>
     
     <item>

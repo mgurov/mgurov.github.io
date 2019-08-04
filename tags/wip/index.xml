@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kotlin on Mykola on blog</title>
-    <link>https://mgurov.github.io/tags/kotlin/</link>
-    <description>Recent content in Kotlin on Mykola on blog</description>
+    <title>WIP on Mykola on blog</title>
+    <link>https://mgurov.github.io/tags/wip/</link>
+    <description>Recent content in WIP on Mykola on blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Jul 2019 12:51:38 +0200</lastBuildDate>
     
-	<atom:link href="https://mgurov.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mgurov.github.io/tags/wip/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

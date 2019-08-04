@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mgurov.github.io/talks/trunk-based-delivery/</loc>
+    <lastmod>2019-07-07T12:41:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/talks/testing-on-production/</loc>
+    <lastmod>2019-07-07T12:31:38+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mgurov.github.io/tags/kotlin/</loc>
     <lastmod>2019-07-07T12:51:38+02:00</lastmod>
     <priority>0</priority>
@@ -32,6 +42,12 @@
   </url>
   
   <url>
+    <loc>https://mgurov.github.io/tags/wip/</loc>
+    <lastmod>2019-07-07T12:51:38+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mgurov.github.io/talks/kotlin-for-testability/</loc>
     <lastmod>2019-07-07T12:51:38+02:00</lastmod>
   </url>
@@ -43,19 +59,9 @@
   </url>
   
   <url>
-    <loc>https://mgurov.github.io/talks/trunk-based-delivery/</loc>
-    <lastmod>2019-07-07T12:41:38+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mgurov.github.io/tags/cd/</loc>
     <lastmod>2019-07-07T12:41:38+02:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mgurov.github.io/talks/testing-on-production/</loc>
-    <lastmod>2019-07-07T12:31:38+02:00</lastmod>
   </url>
   
   <url>
