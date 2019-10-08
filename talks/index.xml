@@ -12,16 +12,6 @@
     
     
     <item>
-      <title>Back to Trunk - the path of the Continuous Delivery</title>
-      <link>https://mgurov.github.io/talks/trunk-based-delivery/</link>
-      <pubDate>Sun, 07 Jul 2019 12:41:38 +0200</pubDate>
-      
-      <guid>https://mgurov.github.io/talks/trunk-based-delivery/</guid>
-      <description>Deploy continuously, move faster. Why? Won’t things break? What are the benefits for the teams and their stakeholders? Do those also apply to the “deep” back-end systems?
-At bol.com (one of the biggest online retailers of the Netherlands), feature teams enjoy lots of autonomy. We can press the &amp;ldquo;deploy&amp;rdquo; button at any moment. Theoretically. Practically, there are non-technical obstacles, like: &amp;ldquo;testing isn&amp;rsquo;t complete, the rest of the changes must wait.</description>
-    </item>
-    
-    <item>
       <title>Testing on Production – deep backend edition</title>
       <link>https://mgurov.github.io/talks/testing-on-production/</link>
       <pubDate>Sun, 07 Jul 2019 12:31:38 +0200</pubDate>
@@ -33,12 +23,13 @@ This talk is based on my experience of increasing the delivery rate within the c
     </item>
     
     <item>
-      <title>WIP – Mocks: is more always better?</title>
-      <link>https://mgurov.github.io/talks/mockless-testing/</link>
-      <pubDate>Tue, 30 Jul 2019 21:04:07 +0200</pubDate>
+      <title>Back to Trunk - the path of the Continuous Delivery</title>
+      <link>https://mgurov.github.io/talks/trunk-based-delivery/</link>
+      <pubDate>Sun, 07 Jul 2019 12:41:38 +0200</pubDate>
       
-      <guid>https://mgurov.github.io/talks/mockless-testing/</guid>
-      <description>&lt;p&gt;Mocking and stubbing are, without any doubt, important techniques for a modern software developer to master. But can there be too much of the mocking goodness?&lt;/p&gt;</description>
+      <guid>https://mgurov.github.io/talks/trunk-based-delivery/</guid>
+      <description>Deploy continuously, move faster. Why? Won’t things break? What are the benefits for the teams and their stakeholders? Do those also apply to the “deep” back-end systems?
+At bol.com (one of the biggest online retailers of the Netherlands), feature teams enjoy lots of autonomy. We can press the &amp;ldquo;deploy&amp;rdquo; button at any moment. Theoretically. Practically, there are non-technical obstacles, like: &amp;ldquo;testing isn&amp;rsquo;t complete, the rest of the changes must wait.</description>
     </item>
     
     <item>
@@ -48,6 +39,15 @@ This talk is based on my experience of increasing the delivery rate within the c
       
       <guid>https://mgurov.github.io/talks/kotlin-for-testability/</guid>
       <description>On Kotling helping to bringing the joy back to TDD</description>
+    </item>
+    
+    <item>
+      <title>WIP – Mocks: is more always better?</title>
+      <link>https://mgurov.github.io/talks/mockless-testing/</link>
+      <pubDate>Tue, 30 Jul 2019 21:04:07 +0200</pubDate>
+      
+      <guid>https://mgurov.github.io/talks/mockless-testing/</guid>
+      <description>&lt;p&gt;Mocking and stubbing are, without any doubt, important techniques for a modern software developer to master. But can there be too much of the mocking goodness?&lt;/p&gt;</description>
     </item>
     
   </channel>

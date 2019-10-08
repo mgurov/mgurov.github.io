@@ -12,21 +12,21 @@
     
     
     <item>
-      <title>WIP – Mocks: is more always better?</title>
-      <link>https://mgurov.github.io/talks/mockless-testing/</link>
-      <pubDate>Tue, 30 Jul 2019 21:04:07 +0200</pubDate>
-      
-      <guid>https://mgurov.github.io/talks/mockless-testing/</guid>
-      <description>&lt;p&gt;Mocking and stubbing are, without any doubt, important techniques for a modern software developer to master. But can there be too much of the mocking goodness?&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Sprinkle sprinkle Kotlin sugar - small big shifts in test preparation</title>
       <link>https://mgurov.github.io/talks/kotlin-for-testability/</link>
       <pubDate>Sun, 07 Jul 2019 12:51:38 +0200</pubDate>
       
       <guid>https://mgurov.github.io/talks/kotlin-for-testability/</guid>
       <description>On Kotling helping to bringing the joy back to TDD</description>
+    </item>
+    
+    <item>
+      <title>WIP – Mocks: is more always better?</title>
+      <link>https://mgurov.github.io/talks/mockless-testing/</link>
+      <pubDate>Tue, 30 Jul 2019 21:04:07 +0200</pubDate>
+      
+      <guid>https://mgurov.github.io/talks/mockless-testing/</guid>
+      <description>&lt;p&gt;Mocking and stubbing are, without any doubt, important techniques for a modern software developer to master. But can there be too much of the mocking goodness?&lt;/p&gt;</description>
     </item>
     
     <item>

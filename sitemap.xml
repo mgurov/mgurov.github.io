@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mgurov.github.io/talks/testing-on-production/</loc>
+    <lastmod>2019-07-07T12:31:38+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mgurov.github.io/talks/trunk-based-delivery/</loc>
     <lastmod>2019-07-07T12:41:38+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mgurov.github.io/talks/testing-on-production/</loc>
-    <lastmod>2019-07-07T12:31:38+02:00</lastmod>
+    <loc>https://mgurov.github.io/talks/kotlin-for-testability/</loc>
+    <lastmod>2019-07-07T12:51:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mgurov.github.io/talks/mockless-testing/</loc>
+    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
   </url>
   
   <url>
@@ -65,11 +75,6 @@
   </url>
   
   <url>
-    <loc>https://mgurov.github.io/talks/mockless-testing/</loc>
-    <lastmod>2019-07-30T21:04:07+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mgurov.github.io/tags/talks/</loc>
     <lastmod>2019-07-30T21:04:07+02:00</lastmod>
     <priority>0</priority>
@@ -79,11 +84,6 @@
     <loc>https://mgurov.github.io/tags/kotlin/</loc>
     <lastmod>2019-07-07T12:51:38+02:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mgurov.github.io/talks/kotlin-for-testability/</loc>
-    <lastmod>2019-07-07T12:51:38+02:00</lastmod>
   </url>
   
   <url>
