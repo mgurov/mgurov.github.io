@@ -1,0 +1,9 @@
+.hackprecolor > pre {
+    color: inherit;
+    background-color: inherit;
+}
+
+pre.hackprecolor2 {
+    color: inherit;
+    background-color: inherit;
+}
